@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосервис Sibdigital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="body_container">
+        <div class="sidebar">
+            <div class="sidebar__logo">
+                <div class="logo-item">
+                    <img src="img/Logo.svg" alt="" class="logo-img">
+                    <p class="title">ЛОГО</p>
+                </div>
+            </div>
+            <div class="sidebar__button">
+                <div class="button-item">
+                    <img src="img/Dashboard.svg" alt="" class="dashboard-img">
+                    <a href="#" class="title">Дашборд</a>
+                </div>
+                <div class="button-item">
+                    <img src="img/Sidebar_clients.svg" alt="" class="client_sidebar-img">
+                    <a href="#" class="title">Клиенты</a>
+                </div>
+                <div id="sidebar_repair" class="button-item">
+                    <img src="img/Vehicle-services.svg" alt="" class="repair_sidebar-img">
+                    <a href="#" class="title">Ремонты</a>
+                </div>
+                <div class="button-item">
+                    <img src="img/FolderNotch.svg" alt="" class="folder-img">
+                    <a href="#" class="title">Проекты</a>
+                    <img src="img/Button_arrow.svg" alt="" class="button_arrow">
+                </div>
+                <div class="button-item">
+                    <img src="img/IdentificationCard.svg" alt="" class="identity-img">
+                    <a href="#" class="title">Профиль</a>
+                </div>
+                <div class="button-item">
+                    <img src="img/Notebook.svg" alt="" class="notebook-img">
+                    <a href="#" class="title">Справочник</a>
+                </div>
+                <div class="button-item">
+                    <img src="img/Chats.svg" alt="" class="chat-img">
+                    <a href="#" class="title">Чат</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="container">
+                    <nav class="nav">
+                        <div class="car-title">
+                            <a href="" class="arrow_header-img">
+                                <img src="img/Arrow.svg" alt="" class="arrow_header-img">
+                            </a>
+                            <p class="name">Предстоящий ремонт</p>
+                        </div>
+                        <div class="search">
+                            <div class="search-item">
+                                <p class="search-link">Поиск</p>
+                            </div>
+                            <div class="img">
+                                <img src="img/Search.svg" alt="" class="search-img">
+                            </div>
+                        </div>
+                        <div class="nav_button">
+                            <a href="#" class="notification">
+                                <img src="img/Notification.svg" alt="" class="notification-img">
+                            </a>
+                            <a href="#" class="message">
+                                <img src="img/Message.svg" alt="" class="message-img">
+                            </a>
+                            <a href="#" class="client">
+                                <img src="img/Client.svg" alt="" class="client-img">
+                            </a>
+                            <a href="#" class="statistic">
+                                <img src="img/Statistic.svg" alt="" class="statistic-img">
+                            </a>
+                        </div>
+                    </nav>
+                    <div class="profile">
+                        <div class="profile-info">
+                            <p class="full_name">Алексей Чумаков</p>
+                            <p class="company">«Автолидер»</p>
+                        </div>
+                        <div class="img_profile">
+                            <a href="#" class="img_profile">
+                                <img src="img/Profile.png" alt="" class="profile-logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="container">
+                    <div class="repair__card">
+                        <ul class="upcoming_repair">
+                            <li class="repair_item">
+                                <div class="repair_item-info">
+                                    <div class="img">
+                                        <img src="img/Engine.svg" alt="" class="engine_info-img">
+                                    </div>
+                                    <div class="text">
+                                        <p id="first_font" class="name">Двигатель</p>
+                                        <p id="second_font" class="name">Замена масла</p>
+                                    </div>
+                                    <p class="car-name">Москвич 3</p>
+                                    <div class="value">
+                                        <p id="first_font" class="distance">через</p>
+                                        <p id="third_font" class="distance">442 км</p>
+                                    </div>
+                                </div>
+                                <div class="progress-bar" data-value="442" data-max-value="2500">
+                                    <div id="red-bar" class="progress"></div>
+                                </div>
+                                <button class="button button-repair">Предложить ремонт</button>
+                            </li>
+                            <li class="repair_item">
+                                <div class="repair_item-info">
+                                    <div class="img">
+                                        <img src="img/Pendant.svg" alt="" class="pendant_info-img">
+                                    </div>
+                                    <div class="text">
+                                        <p id="first_font" class="name">Подвеска</p>
+                                        <p id="second_font" class="name">Стойки амортизатора</p>
+                                    </div>
+                                    <p class="car-name">Москвич 3</p>
+                                    <div class="value">
+                                        <p id="first_font" class="distance">через</p>
+                                        <p id="third_font" class="distance">1 442 км</p>
+                                    </div>
+                                </div>
+                                <div class="progress-bar" data-value="1442" data-max-value="6000">
+                                    <div id="pink-bar" class="progress"></div>
+                                </div>
+                                <button class="button button-repair">Предложить ремонт</button>
+                            </li>
+                            <li class="repair_item">
+                                <div class="repair_item-info">
+                                    <div class="img">
+                                        <img src="img/Pendant.svg" alt="" class="pendant_info-img">
+                                    </div>
+                                    <div class="text">
+                                        <p id="first_font" class="name">Подвеска</p>
+                                        <p id="second_font" class="name">Стойки амортизатора</p>
+                                    </div>
+                                    <p class="car-name">Лада Vesta</p>
+                                    <div class="value">
+                                        <p id="first_font" class="distance">через</p>
+                                        <p id="third_font" class="distance">1 416 км</p>
+                                    </div>
+                                </div>
+                                <div class="progress-bar" data-value="1416" data-max-value="6000">
+                                    <div id="pink-bar" class="progress"></div>
+                                </div>
+                                <button class="button button-repair">Предложить ремонт</button>
+                            </li>
+                            <li class="repair_item">
+                                <div class="repair_item-info">
+                                    <div class="img">
+                                        <img src="img/Engine.svg" alt="" class="engine_info-img">
+                                    </div>
+                                    <div class="text">
+                                        <p id="first_font" class="name">Двигатель</p>
+                                        <p id="second_font" class="name">Замена масла</p>
+                                    </div>
+                                    <p class="car-name">Kia Rio</p>
+                                    <div class="value">
+                                        <p id="first_font" class="distance">через</p>
+                                        <p id="third_font" class="distance">2 887 км</p>
+                                    </div>
+                                </div>
+                                <div class="progress-bar" data-value="2887" data-max-value="8500">
+                                    <div id="Kia_Rio" class="progress"></div>
+                                </div>
+                                <button class="button button-repair">Предложить ремонт</button>
+                            </li>
+                            <li class="repair_item">
+                                <div class="repair_item-info">
+                                    <div class="img">
+                                        <img src="img/Pendant.svg" alt="" class="pendant_info-img">
+                                    </div>
+                                    <div class="text">
+                                        <p id="first_font" class="name">Подвеска</p>
+                                        <p id="second_font" class="name">Сайлент блоки</p>
+                                    </div>
+                                    <p class="car-name">Москвич 3</p>
+                                    <div class="value">
+                                        <p id="first_font" class="distance">через</p>
+                                        <p id="third_font" class="distance">2 942 км</p>
+                                    </div>
+                                </div>
+                                <div class="progress-bar" data-value="2942" data-max-value="7500">
+                                    <div id="Москвич_5" class="progress"></div>
+                                </div>
+                                <button class="button button-repair">Предложить ремонт</button>
+                            </li>
+                            <li class="repair_item">
+                                <div class="repair_item-info">
+                                    <div class="img">
+                                        <img src="img/Pendant.svg" alt="" class="pendant_info-img">
+                                    </div>
+                                    <div class="text">
+                                        <p id="first_font" class="name">Подвеска</p>
+                                        <p id="second_font" class="name">Стойки амортизатора</p>
+                                    </div>
+                                    <p class="car-name">Toyota Land Cruiser</p>
+                                    <div class="value">
+                                        <p id="first_font" class="distance">через</p>
+                                        <p id="third_font" class="distance">3 173 км</p>
+                                    </div>
+                                </div>
+                                <div class="progress-bar" data-value="3173" data-max-value="6500">
+                                    <div id="Toyota" class="progress"></div>
+                                </div>
+                                <button class="button button-repair">Предложить ремонт</button>
+                            </li>
+                            <li class="repair_item">
+                                <div class="repair_item-info">
+                                    <div class="img">
+                                        <img src="img/Pendant.svg" alt="" class="pendant_info-img">
+                                    </div>
+                                    <div class="text">
+                                        <p id="first_font" class="name">Подвеска</p>
+                                        <p id="second_font" class="name">Шаровая опора</p>
+                                    </div>
+                                    <p class="car-name">Москвич 3</p>
+                                    <div class="value">
+                                        <p id="first_font" class="distance">через</p>
+                                        <p id="third_font" class="distance">3 442 км</p>
+                                    </div>
+                                </div>
+                                <div class="progress-bar" data-value="3442" data-max-value="6000">
+                                    <div id="green-bar" class="progress"></div>
+                                </div>
+                                <button class="button button-repair">Предложить ремонт</button>
+                            </li>
+                            <li class="repair_item">
+                                <div class="repair_item-info">
+                                    <div class="img">
+                                        <img src="img/Car Body.svg" alt="" class="carbody_info-img">
+                                    </div>
+                                    <div class="text">
+                                        <p id="first_font" class="name">Кузов</p>
+                                        <p id="second_font" class="name">Фары передние</p>
+                                    </div>
+                                    <p class="car-name">Москвич 3</p>
+                                    <div class="value">
+                                        <p id="first_font" class="distance">через</p>
+                                        <p id="third_font" class="distance">4 442 км</p>
+                                    </div>
+                                </div>
+                                <div class="progress-bar" data-value="4442" data-max-value="6000">
+                                    <div id="Москвич_8" class="progress"></div>
+                                </div>
+                                <button class="button button-repair">Предложить ремонт</button>
+                            </li>
+                            <li class="repair_item">
+                                <div class="repair_item-info">
+                                    <div class="img">
+                                        <img src="img/Pendant.svg" alt="" class="pendant_info-img">
+                                    </div>
+                                    <div class="text">
+                                        <p id="first_font" class="name">Подвеска</p>
+                                        <p id="second_font" class="name">Стойки амортизатора</p>
+                                    </div>
+                                    <p class="car-name">Москвич 3</p>
+                                    <div class="value">
+                                        <p id="first_font" class="distance">через</p>
+                                        <p id="third_font" class="distance">6 715 км</p>
+                                    </div>
+                                </div>
+                                <div class="progress-bar" data-value="6715" data-max-value="8000">
+                                    <div id="Москвич_9" class="progress"></div>
+                                </div>
+                                <button class="button button-repair">Предложить ремонт</button>
+                            </li>
+                        </ul>
+                        <script src="js/updateProgressBar.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

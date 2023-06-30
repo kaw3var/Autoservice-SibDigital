@@ -1,0 +1,344 @@
+.body_container {
+    display: flex;
+}
+
+.sidebar {
+    width: 212px;
+    background: #7165E3;
+}
+
+.content {
+    width: calc(100% - 212px);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+/* Настройка Header */
+.header {
+    background-color: #FFFFFF;
+    color: #1C1939;
+    height: 82px;
+}
+
+.header .container {
+    margin: 0 auto;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: 3fr 15%;
+    grid-template-rows: 82px;
+}
+
+.header .nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.car-title{
+    display: flex;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.car-title .name {
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+.car-title .value {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+    border-radius: 40px;
+    padding: 15px 20px 15px 25px;
+    height: 10px;
+    align-items: center;
+}
+
+.search-item{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.nav .nav_button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-info {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    align-items: center;
+}
+
+.full_name{
+    font-size: 16px;
+    line-height: 20px;
+    color: #1C1939;
+}
+
+.company{
+    font-size: 12px;
+    line-height: 14.52px;
+    color:  rgba(158, 166, 190, 1);
+}
+
+body {
+    background: #F9F9FB;
+}
+
+/* Настройка Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    border-radius: 0 20px 20px 0;
+}
+
+.sidebar .sidebar__logo {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    width: 180px;
+    height: 32px;
+    font-weight: 700;
+    padding-left: 24px;
+    font-size: 22px;
+    color:  #FFFFFF;
+}
+
+.sidebar__logo .logo-item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar .sidebar__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 180px;
+    height: 360px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding-top: 32px;
+    padding-left: 16px;
+}
+
+.sidebar .title {
+    margin-left: 12px;
+    color: #FFFFFF;
+}
+
+.sidebar__button .button-item {
+    align-items: center;
+    display: flex;
+    padding: 12px 48px 12px 12px;
+}
+
+.button_arrow {
+    margin-left: 43px;
+}
+
+#sidebar_repair {
+    background: #FFFFFF12;
+    border-radius: 5px;
+}
+
+/* Блок с ремонтом */
+.repair__card {
+    grid-template-columns: 1fr;
+    grid-row-gap: 24px;
+    display: grid;
+    justify-content: center;
+    grid-column-gap: 36px;
+    margin: 40px;
+}
+
+.upcoming_repair {
+    display: grid;
+    grid-template-rows: repeat(9, 101px);
+    grid-row-gap: 20px;
+}
+
+.upcoming_repair .repair_sugget_item {
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+/* Кнопка Предложить ремонт */
+.repair_item .button-repair {
+    display: inline-block;
+    user-select: none;
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700; 
+    border: 0;
+    color: white;
+    background-color: #7165E3;
+    box-shadow: 0px 5px 10px rgba(38, 51, 77, 0.07);
+    border-radius: 10px;
+    height: 48px;
+    width: 280px;
+}
+
+.button-repair:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.button-repair:focus {
+    opacity: .8;
+    outline: none;
+}
+/*-----------------------------*/
+
+.upcoming_repair .repair_item {
+    background: #FFFFFF;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.repair_item-info {
+    display: grid;
+    grid-template-columns: 6% 50% 20% 20%;
+    align-items: center;
+}
+
+.repair_item .text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 30px;
+    margin: 0;
+}
+
+.repair_item .value {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.repair_item .value .distance {
+    padding-left: 5px;
+    margin: 0;
+}
+
+.repair__card .img {
+    margin-left: 30px;
+}
+
+.repair_item .car-name {
+    justify-content: flex-end;
+    display: flex;
+    color: #1C1939;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* ID_font в repair__card*/
+#first_font {
+    color: #83809C;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#second_font {
+    color: #1C1939;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#third_font {
+    color: #1C1939;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Прогресс бар */
+.progress-bar {
+    display: flex;
+    width: 276px;
+    height: 6px;
+    background: rgba(28, 25, 57, 0.2);
+    border-radius: 5px;
+}
+
+#red-bar {
+    border-radius: 5px;
+    background: #FF4C4C;
+}
+
+#pink-bar {
+    border-radius: 5px;
+    background: #C643F4;
+}
+
+#Kia_Rio {
+    border-radius: 5px;
+    background: #438AF4;
+}
+
+#Москвич_5 {
+    border-radius: 5px;
+    background: #438AF4;
+}
+
+#Toyota {
+    border-radius: 5px;
+    background: #438AF4;
+}
+
+#green-bar {
+    border-radius: 5px;
+    background: #39C647;
+}
+
+.yellow_bar {
+    background: #FFA733;
+}
+
+#Москвич_8{
+    border-radius: 5px;
+    background: #FFA733;
+}
+
+#Москвич_9{
+    border-radius: 5px;
+    background: #FFA733;
+}
